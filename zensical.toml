@@ -269,10 +269,10 @@ logo = "extra_assets/images/logo.png"
 # - https://github.com/zensical/ui/tree/master/dist/.icons
 # ----------------------------------------------------------------------------
 [project.theme.icon]
-favicon = "bootstrap/favicon"
+logo = "bootstrap/favicon"
 
 [project.theme.icon.admonition]
-amdmonition = "bootstrap/favicon"
+admonition = "bootstrap/favicon"
 note = "octicons/tag-16"
 abstract = "octicons/checklist-16"
 info = "octicons/info-16"
