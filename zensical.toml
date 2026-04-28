@@ -269,9 +269,10 @@ logo = "extra_assets/images/logo.png"
 # - https://github.com/zensical/ui/tree/master/dist/.icons
 # ----------------------------------------------------------------------------
 [project.theme.icon]
-logo = "bootstrap/favicon"
+favicon = "bootstrap/favicon"
 
 [project.theme.icon.admonition]
+amdmonition = "bootstrap/favicon"
 note = "octicons/tag-16"
 abstract = "octicons/checklist-16"
 info = "octicons/info-16"
@@ -351,7 +352,7 @@ link = "https://github.com/Scriber-Labs"
 [project.markdown_extensions.footnotes]
 [project.markdown_extensions.md_in_html]
 [project.markdown_extensions.toc]
-permalink = true
+permalink = ""
 [project.markdown_extensions.pymdownx.arithmatex]
 generic = true
 [project.markdown_extensions.pymdownx.betterem]
@@ -367,18 +368,24 @@ options.custom_icons = ["overrides/.icons"]
 anchor_linenums = true
 line_spans = "__span"
 pygments_lang_class = true
+auto_title = true
+
 [project.markdown_extensions.pymdownx.inlinehilite]
 [project.markdown_extensions.pymdownx.keys]
 [project.markdown_extensions.pymdownx.magiclink]
 [project.markdown_extensions.pymdownx.mark]
 [project.markdown_extensions.pymdownx.smartsymbols]
+
 [project.markdown_extensions.pymdownx.superfences]
 custom_fences = [
   { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
 ]
+
 [project.markdown_extensions.pymdownx.tabbed]
 alternate_style = true
 combine_header_slug = true
+
 [project.markdown_extensions.pymdownx.tasklist]
 custom_checkbox = true
+
 [project.markdown_extensions.pymdownx.tilde]
