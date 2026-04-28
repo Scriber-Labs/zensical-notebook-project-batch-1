@@ -312,7 +312,7 @@ text = "Chivo Mono"
 # - https://zensical.org/docs/setup/colors/
 # ----------------------------------------------------------------------------
 # Palette toggle for automatic mode
-palette.primary = "light blue"
+palette.primary = "green"
 palette.accent = "indigo"
 
 [[project.theme.palette]]
