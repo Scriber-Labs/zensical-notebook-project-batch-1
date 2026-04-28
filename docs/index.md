@@ -1,5 +1,5 @@
 ---
-icon: lucide/rocket
+title: Scriber Labs - Research Notebook
 ---
 
 # Get started
