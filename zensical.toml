@@ -36,7 +36,6 @@ site_url = "https://scriber-labs.github.io/research-notebook"
 copyright = """
 Copyright &copy; Scriber Labs 2025-2026. All rights reserved.
 """
-
 # Zensical supports both implicit navigation and explicitly defined navigation.
 # If you decide not to define a navigation here then Zensical will simply
 # derive the navigation structure from the directory structure of your
@@ -84,7 +83,7 @@ extra_javascript = ["extra_assets/javascripts/extra.js"]
 # Read more:
 # - https://zensical.org/docs/customization/#extending-the-theme
 #
-#custom_dir = "overrides"
+custom_dir = "overrides"
 
 # With the "favicon" option you can set your own image to use as the icon
 # browsers will use in the browser title bar or tab bar. The path provided
@@ -267,10 +266,10 @@ logo = "extra_assets/images/logo.png"
 # - https://github.com/zensical/ui/tree/master/dist/.icons
 # ----------------------------------------------------------------------------
 [project.theme.icon]
-logo = "extra_assets/icons/logo.png"
-#admonition = {<type> = "<icon>"}
+logo = "bootstrap/favicon"
 
 [project.theme.icon.admonition]
+#adominition = "favicon"
 note = "octicons/tag-16"
 abstract = "octicons/checklist-16"
 info = "octicons/info-16"
@@ -353,9 +352,12 @@ generic = true
 [project.markdown_extensions.pymdownx.betterem]
 [project.markdown_extensions.pymdownx.caret]
 [project.markdown_extensions.pymdownx.details]
+
 [project.markdown_extensions.pymdownx.emoji]
 emoji_generator = "zensical.extensions.emoji.to_svg"
 emoji_index = "zensical.extensions.emoji.twemoji"
+options.custom_icons = ["overrides/.icons"]
+
 [project.markdown_extensions.pymdownx.highlight]
 anchor_linenums = true
 line_spans = "__span"
