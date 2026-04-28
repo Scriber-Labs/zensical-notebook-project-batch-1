@@ -45,8 +45,11 @@ Copyright &copy; Scriber Labs 2025-2026. All rights reserved.
 # Read more: https://zensical.org/docs/setup/navigation/
  nav = [
    { "Home" = "index.md" },
-   { "Project 1" = "project_batch_1/project_1.md" },
-   { "Project 2" = "project_batch_1/project_2.md" }
+   { "Project Batch 1" = [
+    { "Project 1" = "project_batch_1/project_1.md" },
+    { "Project 2" = "project_batch_1/project_2.md" },
+   ]},
+   { "Zensical Overview" = "zensical_overview.md" },
  ]
 
 # With the "extra_css" option you can add your own CSS styling to customize
@@ -269,7 +272,6 @@ logo = "extra_assets/images/logo.png"
 logo = "bootstrap/favicon"
 
 [project.theme.icon.admonition]
-#adominition = "favicon"
 note = "octicons/tag-16"
 abstract = "octicons/checklist-16"
 info = "octicons/info-16"
@@ -303,6 +305,9 @@ text = "Aclonica"
 # - https://zensical.org/docs/setup/colors/
 # ----------------------------------------------------------------------------
 # Palette toggle for automatic mode
+palette.primary = "light blue"
+palette.accent = "indigo"
+
 [[project.theme.palette]]
 media = "(prefers-color-scheme)"
 toggle.icon = "lucide/sun-moon"
@@ -326,8 +331,8 @@ toggle.name = "Switch to system preference"
 # The "extra" section contains miscellaneous settings.
 # ----------------------------------------------------------------------------
 #[[project.extra.social]]
-#icon = "fontawesome/brands/github"
-#link = "https://github.com/user/repo"
+icon = "fontawesome/brands/github"
+link = "https://github.com/Scriber-Labs"
 
 # ----------------------------------------------------------------------------
 # In this section you can configure the Markdown extensions that are used when

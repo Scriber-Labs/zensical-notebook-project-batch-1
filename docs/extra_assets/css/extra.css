@@ -2,4 +2,9 @@
     --md-primary-fg-color:          #14B5FF;
     --md-primary-fg-color--light:   #14B5FF;
     --md-primary-fg-color--dark:    #14B5FF;
+    
+    /* Gradients (KEEP THESE — your identity) */
+    --gradient-cyan-blue: linear-gradient(130deg, #00ffee, #0a95eb);
+    --gradient-blue-purple: linear-gradient(to right bottom, #00e8ff, #14b5ff, #5280ff, #7952f5);
 }
+
