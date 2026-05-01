@@ -56,7 +56,8 @@ Copyright &copy; Scriber Labs 2025-2026. All rights reserved.
        { "Project 2" = [
           { "Introduction" = "project_batch_1/project_2/index.md" },
           { "Architecture" = "project_batch_1/project_2/architecture_2.md" },
-          { "Figure Analysis" = "project_batch_1/project_2/figure_analysis_2.md" }
+          { "Figure Analysis" = "project_batch_1/project_2/figure_analysis_2.md" },
+          { "Take-Home Messages" = "project_batch_1/project_2/take_home_messages_2.md"}
        ]},
    ]},
    { "🔖 References" = "references/references.md" },
@@ -70,7 +71,10 @@ Copyright &copy; Scriber Labs 2025-2026. All rights reserved.
 #
 # Read more: https://zensical.org/docs/customization/#additional-css
 #
-extra_css = ["extra_assets/css/extra.css"]
+extra_css = [
+    "extra_assets/css/extra.css",
+    "https://unpkg.com/katex@0/dist/katex.min.css"
+]
 
 # With the `extra_javascript` option you can add your own JavaScript to your
 # project to customize the behavior according to your needs.
@@ -78,7 +82,12 @@ extra_css = ["extra_assets/css/extra.css"]
 # The path provided should be relative to the "docs_dir".
 #
 # Read more: https://zensical.org/docs/customization/#additional-javascript
-extra_javascript = ["extra_assets/javascript/extra.js"]
+extra_javascript = [
+    "extra_assets/javascript/extra.js",
+    "javascripts/katex.js",
+    "https://unpkg.com/katex@0/dist/katex.min.js",
+    "https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"
+]
 
 # ----------------------------------------------------------------------------
 # Section for configuring theme options
@@ -364,40 +373,40 @@ link = "https://github.com/Scriber-Labs"
 
 [project.markdown_extensions.toc]
 permalink = ""
-[project.markdown_extensions.pymdownx.arithmatex]
+[project.markdown_extensions."pymdownx.arithmatex"]
 generic = true
 
-[project.markdown_extensions.pymdownx.betterem]
-[project.markdown_extensions.pymdownx.caret]
-[project.markdown_extensions.pymdownx.details]
+[project.markdown_extensions."pymdownx.betterem"]
+[project.markdown_extensions."pymdownx.caret"]
+[project.markdown_extensions."pymdownx.details"]
 
-[project.markdown_extensions.pymdownx.emoji]
+[project.markdown_extensions."pymdownx.emoji"]
 emoji_generator = "zensical.extensions.emoji.to_svg"
 emoji_index = "zensical.extensions.emoji.twemoji"
 options.custom_icons = ["overrides/.icons"]
 
-[project.markdown_extensions.pymdownx.highlight]
+[project.markdown_extensions."pymdownx.highlight"]
 anchor_linenums = true
 line_spans = "__span"
 pygments_lang_class = false
 auto_title = true
 
-[project.markdown_extensions.pymdownx.inlinehilite]
-[project.markdown_extensions.pymdownx.keys]
-[project.markdown_extensions.pymdownx.magiclink]
-[project.markdown_extensions.pymdownx.mark]
-[project.markdown_extensions.pymdownx.smartsymbols]
+[project.markdown_extensions."pymdownx.inlinehilite"]
+[project.markdown_extensions."pymdownx.keys"]
+[project.markdown_extensions."pymdownx.magiclink"]
+[project.markdown_extensions."pymdownx.mark"]
+[project.markdown_extensions."pymdownx.smartsymbols"]
 
-[project.markdown_extensions.pymdownx.superfences]
+[project.markdown_extensions."pymdownx.superfences"]
 custom_fences = [
   { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" }
 ]
 
-[project.markdown_extensions.pymdownx.tabbed]
+[project.markdown_extensions."pymdownx.tabbed"]
 alternate_style = true
 combine_header_slug = true
 
-[project.markdown_extensions.pymdownx.tasklist]
+[project.markdown_extensions."pymdownx.tasklist"]
 custom_checkbox = true
 
-[project.markdown_extensions.pymdownx.tilde]
+[project.markdown_extensions."pymdownx.tilde"]

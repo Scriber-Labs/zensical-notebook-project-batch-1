@@ -596,7 +596,6 @@ body {
   border-left: 4px solid var(--ptg-color-success) !important;
 }
 */
- */
 
 .md-typeset .admonition.danger,
 .md-typeset details.danger,
@@ -720,11 +719,53 @@ body {
 }
 
 /* ============================================
-   MathJax
+   MathJax / KaTeX
    ============================================ */
 .MathJax,
-mjx-container {
+mjx-container,
+.katex {
   color: var(--ptg-color-math) !important;
+}
+
+/* ============================================
+   Mermaid Diagrams
+   ============================================ */
+.mermaid {
+  color: whitesmoke !important;
+}
+
+.mermaid svg {
+  color: whitesmoke !important;
+}
+
+/* Force all text inside Mermaid to be white/whitesmoke */
+.mermaid text,
+.mermaid tspan,
+.mermaid .node label,
+.mermaid .edgeLabel,
+.mermaid .cluster label,
+.mermaid .entityLabel,
+.mermaid .label text {
+  fill: whitesmoke !important;
+  color: whitesmoke !important;
+}
+
+/* Force math inside Mermaid to be white/whitesmoke */
+.mermaid .katex,
+.mermaid .katex * {
+  color: whitesmoke !important;
+  fill: whitesmoke !important;
+}
+
+/* Specific KaTeX math color override for mermaid */
+.mermaid .katex-display,
+.mermaid .katex-inline {
+  color: whitesmoke !important;
+}
+
+/* Ensure math text isn't greyed out */
+.mermaid .katex .math {
+  color: whitesmoke !important;
 }
 
 /* ============================================
