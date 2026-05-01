@@ -9,7 +9,7 @@
         "themeVariables": {
             "background": "#0d1117",
             "lineColor": "#14b5ff",
-            "textColor": "#ffffff",
+            "textColor": "whitesmoke",
             "fontFamily": "'Aclonica', sans-serif",
             "borderRadius": "16"       /* larger radius for more rounded corners */
         },

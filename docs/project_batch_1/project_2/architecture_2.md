@@ -7,13 +7,14 @@
 %%{ init: {
         "theme": "base",
         "themeVariables": {
-            "background": "`#060817`",
-            "lineColor": "`#14B5FF`",
+            "background": "#060817",
+            "lineColor": "#14B5FF",
+            "textColor": "whitesmoke",
             "fontFamily": "'Aclonica', sans-serif",
-            "borderRadius": "16",
+            "borderRadius": "16"
         },
-        "handDrawn": "true",
-        "displayMode": "compact",
+        "handDrawn": true,
+        "displayMode": "compact"
     }
 }%%
 %%====================================================================
@@ -193,11 +194,11 @@ style PINN fill:#0c0c21,stroke:#7259ff,stroke-width:3px,color:#ffffff,stroke-das
 
 classDef eigenfunctions fill:#153a55,stroke:#4ec9ff,stroke-width:2px,color:#ffffff,rx:12px, ry:12px;
 
-style potential fill:#11163a,stroke:#5f88ff,stroke-width:4px,color:#ffffff,rx:12px, ry:12px;
+classDef potential fill:#11163a,stroke:#5f88ff,stroke-width:4px,color:#ffffff,rx:12px, ry:12px;
 style potential_network fill:#0d1630,stroke:#3072f5,stroke-width:4px,color:#ffffff,stroke-dasharray:6 6,rx:12px, ry:12px;
 
 classDef energy fill:#0d2238,stroke:#3b9eff,stroke-width:4px,color:#ffffff,rx:12px, ry:12px;
-style energy_eigenvalues fill:#071320,stroke:#3b9eff,stroke-width:4px,color:#ffffff,stroke-dasharray: 6 6, rx:12px, ry:12px;
+style energy_eigenvalues fill:#071320,stroke:#3b9eff,stroke-width:4px,color:whitesmoke,stroke-dasharray: 6 6, rx:12px, ry:12px;
 
 %%-----------------------------------------------------------
 %% PHYSICS OPERATORS
