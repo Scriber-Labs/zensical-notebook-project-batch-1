@@ -1,8 +1,7 @@
 # Loss Function
 
 ## Mathematical Formulation
-
-$$ \mathcal{L}_\text{tot} = \lambda_1 \mathcal{L}_\text{TISE} + \lambda_2 \mathcal{L}_\text{smooth} + \lambda_3 \mathcal{L}_\text{data} + \lambda_4 \mathcal{L}_\text{order} $$
+## Four Loss Terms
 
 1. **Schrödinger residual (physics loss)**
 
@@ -19,6 +18,9 @@ $$ \mathcal{L}_\text{tot} = \lambda_1 \mathcal{L}_\text{TISE} + \lambda_2 \mathc
 4. **Energy ordering**
    
     $$ \mathcal{L}_\text{order} = \frac{1}{N-1}\sum_{n=0}^{N-2}{\bigg[\max{\big(0, E_n^\theta - E_{n+1}^\theta\big)} \bigg]^2} $$
+
+## Total Loss
+$$ \mathcal{L}_\text{tot} = \lambda_1 \mathcal{L}_\text{TISE} + \lambda_2 \mathcal{L}_\text{smooth} + \lambda_3 \mathcal{L}_\text{data} + \lambda_4 \mathcal{L}_\text{order} $$
 
 ## Description of Terms
 ??? tip "Loss Table"
