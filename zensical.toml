@@ -56,6 +56,7 @@ Copyright &copy; Scriber Labs 2025-2026. All rights reserved.
        { "Project 2" = [
           { "Introduction" = "project_batch_1/project_2/index.md" },
           { "Architecture" = "project_batch_1/project_2/architecture_2.md" },
+          { "Loss Function" = "project_batch_1/project_2/loss_function_2.md"},
           { "Figure Analysis" = "project_batch_1/project_2/figure_analysis_2.md" },
           { "Take-Home Messages" = "project_batch_1/project_2/take_home_messages_2.md"}
        ]},
