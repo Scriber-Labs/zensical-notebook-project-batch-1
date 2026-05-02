@@ -258,9 +258,7 @@
   background-blend-mode: overlay;
 }
 
-/* ============================================
-   Base & Body
-   ============================================ */
+/* Base & Body */
 html {
   scroll-behavior: smooth;
 }
@@ -385,14 +383,17 @@ body {
 /* Ensure the main content area uses proper grid/flex layout */
 .md-main__inner {
   display: flex;
-  margin: var(--ptg-space-lg);
+  margin: var(--ptg-space-lg) auto;
   gap: var(--ptg-space-lg);
+  max-width: 100%;
+  width: 100%;
 }
 
 /* The content area should take remaining space */
 .md-content {
   flex: 1;
   min-width: 0;
+  max-width: none;
   background: var(--ptg-glass-bg, rgba(13, 17, 23, 0.75));
   border: 1px solid var(--ptg-glass-border, rgba(168, 85, 247, 0.2));
   border-radius: var(--ptg-radius-lg);
@@ -401,6 +402,14 @@ body {
   box-shadow: var(--ptg-glass-shadow, 0 8px 32px rgba(0, 0, 0, 0.4));
   padding: var(--ptg-space-xl);
   animation: fadeIn 0.5s ease-out;
+}
+
+/* Layout adjustments for very wide screens to prevent content from becoming too thin */
+@media screen and (min-width: 1600px) {
+  .md-main__inner {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 .md-content:hover {
@@ -428,11 +437,15 @@ body {
 /* Left sidebar (navigation) */
 .md-sidebar--primary {
   border-radius: var(--ptg-radius-lg);
+  flex-shrink: 0;
+  width: 12.1rem;
 }
 
 /* Right sidebar (table of contents) — hide when empty */
 .md-sidebar--secondary {
   border-radius: var(--ptg-radius-lg);
+  flex-shrink: 0;
+  width: 12.1rem;
 }
 
 .md-sidebar--secondary:empty,
@@ -777,16 +790,20 @@ mjx-container {
   .md-main__inner {
     margin: var(--ptg-space-sm);
     gap: var(--ptg-space-sm);
+    display: block;
+    width: auto;
+  }
+
+  .md-sidebar {
+    width: auto;
+    position: static;
+    margin: var(--ptg-space-sm);
+    border-radius: var(--ptg-radius-md);
   }
 
   .md-content {
     padding: var(--ptg-space-lg);
     border-radius: var(--ptg-radius-md);
-  }
-
-  .md-sidebar {
-    border-radius: var(--ptg-radius-md);
-    margin: var(--ptg-space-sm);
   }
 }
 
