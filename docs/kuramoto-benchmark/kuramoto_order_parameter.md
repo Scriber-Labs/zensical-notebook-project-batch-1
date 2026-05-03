@@ -43,13 +43,13 @@ $$ r(t) = \left| \frac{1}{N} \sum_{j=1}^N e^{i \theta_j(t)} \right| $$
 
 ## Interpretation
 
-### Limits
+### Limits of the order parameter
 
-| **Value of** $r$ | **Interpretation** |
-| :--------------- | :----------------- |
+| **Value**     | **Interpretation** |
+|:--------------| :----------------- |
 | $r \approx 1$ | **Complete synchronization** |
 | $r \approx 0$ | **Incoherence** |
-| $0 < r < 1$ | **Partial synchronization** |
+| $0 < r < 1$   | **Partial synchronization** |
 
 ## Connection to Neuroscience
 
