@@ -45,7 +45,10 @@ Copyright &copy; Scriber Labs 2025-2026. All rights reserved.
 # Read more: https://zensical.org/docs/setup/navigation/
  nav = [
    { "🏘️ Home" = "index.md" },
-   { "🌀 Kuramoto Benchmark Data" = "kuramoto-benchmark/index.md" },
+   { "🌀 Kuramoto Benchmark Data" = [
+       { "Overview" = "kuramoto-benchmark/index.md" },
+       { "Numerical Methods" = "kuramoto-benchmark/numerical_methods.md"}
+   ]},
    { "🔰 Project Batch 1" = [
        { "Overview " = "project_batch_1/index.md" },
        { "Project 1" = [
