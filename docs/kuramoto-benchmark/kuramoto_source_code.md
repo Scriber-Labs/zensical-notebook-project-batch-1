@@ -13,7 +13,7 @@ kuramoto/
 └── validation.py
 ```
 
-??? "[`solvers.py`](https://github.com/Scriber-Labs/kuramoto-benchmark-suite/blob/main/src/kuramoto/solvers.py)"
+??? note "[`solvers.py`](https://github.com/Scriber-Labs/kuramoto-benchmark-suite/blob/main/src/kuramoto/solvers.py)"
 
     - This is a thin ODE solver for the Kuramoto model.
     - It uses the `scipy.integrate.solve_ivp` function for the following task:
@@ -40,7 +40,7 @@ kuramoto/
         | `atol` | `float >= 0` | Absolute tolerance |
         | `max_step` | `float > 0` | Hard cap on step size |
 
-??? "[`model.py`](https://github.com/Scriber-Labs/kuramoto-benchmark-suite/blob/main/src/kuramoto/model.py)"
+??? note "[`model.py`](https://github.com/Scriber-Labs/kuramoto-benchmark-suite/blob/main/src/kuramoto/model.py)"
 
     This module bundles three tasks:
 
@@ -92,4 +92,5 @@ kuramoto/
 
 !!! note "🔮 Future Implementations"
 
-    - [ ]  Support for heterogeneous coupling strengths.
+    - [ ]  Support for heterogeneous coupling strengths. 
+

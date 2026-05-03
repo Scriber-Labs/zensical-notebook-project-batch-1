@@ -2,8 +2,13 @@
 bibliography: ./references/references.bib
 csl: apa.csl
 ---
+# Vanilla Kuramoto Model 
 
-# The Kuramoto Order Parameter
+$$ \dot{\theta}_i = \omega_i + \frac{1}{N}\sum_{j=1}^{N}{K_{i,j} \, \sin(\theta_j - \theta_i)} $$
+
+!!! warning "Need to double-check with sources."
+
+# The Order Parameter
 
 ## Concept Overview
 The **order parameter** $r(t)$ is the primary metric for quantifying synchronization in the Kuramoto model.
