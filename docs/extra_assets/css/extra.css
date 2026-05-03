@@ -372,8 +372,22 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3), 0 0 30px rgba(168, 85, 247, 0.08);
 }
 
-.md-header__title {
-  font-family: var(--ptg-font-heading);
+.md-header__title,
+.md-header__title .md-ellipsis,
+[data-md-component="header-title"] .md-ellipsis {
+  font-family: var(--ptg-font-heading) !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+  font-size: 1.25rem !important;
+  background: var(--ptg-gradient-blue-purple) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  /* Add a more distinct shadow and separation */
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5)) !important;
+  letter-spacing: 0.5px !important;
+  display: inline-block !important;
 }
 
 /* ============================================

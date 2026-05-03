@@ -49,12 +49,12 @@ Copyright &copy; Scriber Labs 2025-2026. All rights reserved.
    { "🔰 Project Batch 1" = [
        { "Overview " = "project_batch_1/index.md" },
        { "Project 1" = [
-          { "Introduction" = "project_batch_1/project_1/index.md" },
+          { "Overview" = "project_batch_1/project_1/index.md" },
           { "Architecture" = "project_batch_1/project_1/architecture_1.md" },
           { "Figure Analysis" = "project_batch_1/project_1/figure_analysis_1.md" }
        ]},
        { "Project 2" = [
-          { "Introduction" = "project_batch_1/project_2/index.md" },
+          { "Overview" = "project_batch_1/project_2/index.md" },
           { "Architecture" = "project_batch_1/project_2/architecture_2.md" },
           { "Loss Function" = "project_batch_1/project_2/loss_function_2.md"},
           { "Figure Analysis" = "project_batch_1/project_2/figure_analysis_2.md" },
@@ -116,7 +116,7 @@ custom_dir = "overrides"
 # - https://zensical.org/docs/setup/logo-and-icons/#favicon
 # - https://developer.mozilla.org/en-US/docs/Glossary/Favicon
 #
-favicon = "docs/extra_assets/images/favicon.png"
+favicon = "extra_assets/images/favicon.png"
 
 # Zensical supports more than 60 different languages. This means that the
 # labels and tooltips that Zensical's templates produce are translated.
@@ -289,6 +289,7 @@ logo = "extra_assets/images/logo.png"
 # - https://github.com/zensical/ui/tree/master/dist/.icons
 # ----------------------------------------------------------------------------
 [project.theme.icon]
+favicon = "extra_assets/images/favicon.png"
 logo = "bootstrap/favicon"
 
 [project.theme.icon.admonition]
