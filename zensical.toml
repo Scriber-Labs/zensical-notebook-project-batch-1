@@ -47,6 +47,9 @@ Copyright &copy; Scriber Labs 2025-2026. All rights reserved.
    { "🏘️ Home" = "index.md" },
    { "🌀 Kuramoto Benchmark Data" = [
        { "Overview" = "kuramoto-benchmark/index.md" },
+       { "Implementation" = [
+           { "Order Parameter" = "kuramoto-benchmark/kuramoto_order_parameter.md" },
+       ] },
        { "Numerical Methods" = "kuramoto-benchmark/numerical_methods.md"}
    ]},
    { "🔰 Project Batch 1" = [
