@@ -49,7 +49,7 @@ Copyright &copy; Scriber Labs 2025-2026. All rights reserved.
        { "Overview" = "kuramoto-benchmark/index.md" },
        { "Mathematical Foundations" = "kuramoto-benchmark/mathematical-foundations.md" },
        { "Numerical Methods" = "kuramoto-benchmark/numerical-methods.md" },
-       { "Implementation" = "kuramoto-benchmark/source-code.md" },
+       { "Implementation" = "kuramoto-benchmark/source-code.md" }
    ]},
    { "🔰 Project Batch 1" = [
        { "Overview " = "project_batch_1/index.md" },
