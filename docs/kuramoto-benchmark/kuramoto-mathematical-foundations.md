@@ -2,15 +2,27 @@
 bibliography: ./references/references.bib
 csl: apa.csl
 ---
-# Vanilla Kuramoto Model 
+# Governing Equations
 
-$$ \dot{\theta}_i = \omega_i + \frac{1}{N}\sum_{j=1}^{N}{K_{i,j} \, \sin(\theta_j - \theta_i)} $$
+## 🍨 Kuramoto Model 
 
-!!! warning "Need to double-check with sources."
+The time-evolution of the phase $\theta_i$ of the $i^\text{th}$ oscillator in the ensemble is governed by the **Kuramoto model** (vanilla version with noise term):
 
-# The Order Parameter
+$$ \dot{\theta}_i = \omega_i + \frac{K}{N}\sum_{j=1}^{N}{A_{i,j} \, \sin(\theta_j - \theta_i)} + \xi_i(t) \, .$$
 
-## Concept Overview
+|  **Variable** | ✨ **Interpretation**                                                 | 📝 **Notes**                                                                                                                              |
+|:----------------|:---------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
+| $\omega_i$      | *intrinsic frequency* of the $i^\text{th}$ oscillator in the network | Typically drawn from a Lorentzian or Gaussian distribution $g(\omega)$                                                                    |
+| $K$ | *global coupling strength*                                           |                                                                                                                                           |
+| $A_{i,j}$ | *adjacency matrix* topology                                          | 
+| $\xi_i(t)$ | stochastic (noise) term                                              | Often modeled as additive Gaussian white noise (AGWN): $$ \big\langle \xi_i(t) \, \xi_j(t')\big\rangle = 2D\delta_{ij}\delta(t-t') \, .$$ |                                            
+
+
+
+
+## The Order Parameter
+
+### Concept Overview
 The **order parameter** $r(t)$ is the primary metric for quantifying synchronization in the Kuramoto model.
 It acts as a macroscopic observable that emerges from the collective microscopic interactions among the oscillators.
 
@@ -18,7 +30,7 @@ In the context of our benchmark suite, $r(t)$ quantifies the degree of synchroni
 
 ---
 
-## Mathematical Definition
+### Mathematical Definition
 
 The order parameter is defined via the **complex mean phasor**:
 
@@ -29,7 +41,7 @@ Where:
 - $N$ is the total number of oscillators in the system.
 - $\theta_j(t)$ is the phase of the $j^\text{th}$ oscillator.
 - $r(t) = |z(t)|$ is the *magnitude* of the complex mean phasor and represents the degree of synchronization at time $t$.
-- $\psi(t) = \arg{z(t)}$ is the **average phase** (center of mass of the phases).
+- $\psi(t) = \arg{z(t)}$ is the **average phase** (center-of-mass of the phases).
 
 !!! warning "Need to double-check with sources."
 

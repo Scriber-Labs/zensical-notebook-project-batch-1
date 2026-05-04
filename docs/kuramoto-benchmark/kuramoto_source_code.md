@@ -87,10 +87,9 @@ kuramoto/
         | `freq_pdf` | `string` | frequency distribution of natural frequencies | -- |
         | `phase_pdf` | `string` | phase distribution of initial phases | -- |
         
-        !!! info "📊 denotes that the field is a is a network statistic in the `dict` object, `network_stats`."
+        !!! info "📊 denotes that the field is a network statistic in the `dict` object, `network_stats`."
         
-
-!!! note "🔮 Future Implementations"
-
-    - [ ]  Support for heterogeneous coupling strengths. 
-
+    !!! info "Notes on `KuramotoModel` class object"
+        
+        - No heavy allocation occurs in `__init__`; the main cost is the solver.
+        - ⚠️The class holds the *latest* simulation results. Recalling `simulate` will overwrite the cached arrays.

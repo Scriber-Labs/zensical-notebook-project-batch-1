@@ -48,7 +48,8 @@ Copyright &copy; Scriber Labs 2025-2026. All rights reserved.
    { "🌀 Kuramoto Benchmark Data" = [
        { "Overview" = "kuramoto-benchmark/index.md" },
        { "Mathematical Foundations" = "kuramoto-benchmark/kuramoto-mathematical-foundations.md" },
-       { "Implementation" = "kuramoto-benchmark/kuramoto_source_code.md" }
+       { "Numerical Methods" = "kuramoto-benchmark/kuramoto-computational-methods.md" },
+       { "Implementation" = "kuramoto-benchmark/kuramoto_source_code.md" },
    ]},
    { "🔰 Project Batch 1" = [
        { "Overview " = "project_batch_1/index.md" },
@@ -378,7 +379,7 @@ link = "https://github.com/Scriber-Labs"
 [project.markdown_extensions.md_in_html]
 
 [project.markdown_extensions.toc]
-permalink = ""
+permalink = "🪶"
 [project.markdown_extensions."pymdownx.arithmatex"]
 generic = true
 
