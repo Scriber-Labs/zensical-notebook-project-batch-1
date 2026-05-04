@@ -47,26 +47,30 @@ Copyright &copy; Scriber Labs 2025-2026. All rights reserved.
    { "🏘️ Home" = "index.md" },
    { "🌀 Kuramoto Benchmark Data" = [
        { "Overview" = "kuramoto-benchmark/index.md" },
-       { "Mathematical Foundations" = "kuramoto-benchmark/kuramoto-mathematical-foundations.md" },
-       { "Numerical Methods" = "kuramoto-benchmark/kuramoto-computational-methods.md" },
-       { "Implementation" = "kuramoto-benchmark/kuramoto_source_code.md" },
+       { "Mathematical Foundations" = "kuramoto-benchmark/mathematical-foundations.md" },
+       { "Numerical Methods" = "kuramoto-benchmark/numerical-methods.md" },
+       { "Implementation" = "kuramoto-benchmark/source-code.md" },
    ]},
    { "🔰 Project Batch 1" = [
        { "Overview " = "project_batch_1/index.md" },
        { "Project 1" = [
           { "Overview" = "project_batch_1/project_1/index.md" },
-          { "Architecture" = "project_batch_1/project_1/architecture_1.md" },
-          { "Figure Analysis" = "project_batch_1/project_1/figure_analysis_1.md" }
+          { "Architecture" = "project_batch_1/project_1/architecture.md" },
+          { "Figure Analysis" = "project_batch_1/project_1/figure-analysis.md" }
        ]},
        { "Project 2" = [
           { "Overview" = "project_batch_1/project_2/index.md" },
-          { "Architecture" = "project_batch_1/project_2/architecture_2.md" },
-          { "Loss Function" = "project_batch_1/project_2/loss_function_2.md"},
-          { "Figure Analysis" = "project_batch_1/project_2/figure_analysis_2.md" },
-          { "Take-Home Messages" = "project_batch_1/project_2/take_home_messages_2.md"}
+          { "Architecture" = "project_batch_1/project_2/architecture.md" },
+          { "Loss Function" = "project_batch_1/project_2/loss-function.md"},
+          { "Figure Analysis" = "project_batch_1/project_2/figure-analysis.md" },
+          { "Take-Home Messages" = "project_batch_1/project_2/take-home-messages.md"}
        ]},
    ]},
    { "🔖 References" = "references/references.md" },
+   { "📖 Guides" = [
+       { "Zensical Overview" = "guides/zensical-overview.md" },
+       { "Markdown Guide" = "guides/markdown.md" }
+   ]},
 ]
 
 # With the "extra_css" option you can add your own CSS styling to customize

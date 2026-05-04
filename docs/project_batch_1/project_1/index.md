@@ -2,35 +2,27 @@
 
 <div class="grid cards" markdown>
 
--   🪀 { .lg .middle } __Project 2 Overview__
+-   🪀 { .lg .middle } __Project 1 Overview__
 
     ---
 
     [:octicons-github: ``lf-harmonic-oscillator``](https://github.com/Scriber-Labs/lf-pinn-harmonic-oscillator)
 
--   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
+-   🏗️ { .lg .middle } __Architecture__
 
     ---
 
-    Focus on your content and generate a responsive and searchable static site
+    Detailed view of the PIML framework for the SHO.
 
-    [:octicons-arrow-right-24: Reference](#)
+    [:octicons-arrow-right-24: View Architecture](architecture.md)
 
--   :material-format-font:{ .lg .middle } __Made to measure__
-
-    ---
-
-    Change the colors, fonts, language, icons, logo and more with a few lines
-
-    [:octicons-arrow-right-24: Customization](#)
-
--   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
+-   📊 { .lg .middle } __Figure Analysis__
 
     ---
 
-    Zensical is licensed under MIT and available on [GitHub]
+    Analysis of key figures and plots for Project 1.
 
-    [:octicons-arrow-right-24: License](#)
+    [:octicons-arrow-right-24: View Figures](figure-analysis.md)
 
 </div>
 
