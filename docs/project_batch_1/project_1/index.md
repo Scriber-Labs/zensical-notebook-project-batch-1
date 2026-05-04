@@ -2,13 +2,13 @@
 
 <div class="grid cards" markdown>
 
--   🪀 { .lg .middle } __Project 1 Overview__
+-   🪀 {.lg .middle } __Project 1 Overview__
 
     ---
 
     [:octicons-github: ``lf-harmonic-oscillator``](https://github.com/Scriber-Labs/lf-pinn-harmonic-oscillator)
 
--   🏗️ { .lg .middle } __Architecture__
+-   🏗️ {.lg .middle } __Architecture__
 
     ---
 
@@ -16,7 +16,7 @@
 
     [:octicons-arrow-right-24: View Architecture](architecture.md)
 
--   📊 { .lg .middle } __Figure Analysis__
+-   📊 {.lg .middle } __Figure Analysis__
 
     ---
 

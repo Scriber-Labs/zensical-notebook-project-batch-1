@@ -7,13 +7,13 @@ $$ \theta_i(t+\Delta t) = \theta_i(t) + \dot{\theta}_i(t) \, \Delta t + \frac{1}
 
 <div class="grid cards" markdown>
 
-- 🟢 {.lg .middle} __Euler's Method__
+- 🟢 {.lg .middle } __Euler's Method__
 
     ---
 
     Only retains the first-order term $\mathcal{O}(\Delta t)$.
 
-- 🔴 {.lg .middle} __Runge-Kutta Methods__
+- 🔴 {.lg .middle } __Runge-Kutta Methods__
 
     ---
 
